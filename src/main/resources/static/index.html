@@ -974,77 +974,29 @@
 
       <div class="row contact-form">
         <div class="col-twelve">
-          <!-- form -->
-          <form name="contactForm" id="contactForm" method="post" action="">
-            <fieldset>
-              <div class="form-field">
-                <input
-                  name="contactName"
-                  type="text"
-                  id="contactName"
-                  placeholder="Name"
-                  value=""
-                  minlength="2"
-                  required=""
-                />
-              </div>
-              <div class="form-field">
-                <input
-                  name="contactEmail"
-                  type="email"
-                  id="contactEmail"
-                  placeholder="Email"
-                  value=""
-                  required=""
-                />
-              </div>
-              <div class="form-field">
-                <input
-                  name="contactSubject"
-                  type="text"
-                  id="contactSubject"
-                  placeholder="Subject"
-                  value=""
-                />
-              </div>
-              <div class="form-field">
-                <textarea
-                  name="contactMessage"
-                  id="contactMessage"
-                  placeholder="message"
-                  rows="10"
-                  cols="50"
-                  required=""
-                ></textarea>
-              </div>
-
-              <form action="http://localhost:8080/sendmail" method="POST">
-                <div class="g-recaptcha" data-sitekey="6LcQ7S8dAAAAAJMm2qpYGpYpFR_oTQABIGNWXiih" data-theme="light"></div>
-                <br/>
-                
-              </form>
-
-              <div class="form-field">
-                <button class="submitform">Submit</button>
-                <div id="submit-loader">
-                  <div class="text-loader">Sending...</div>
-                  <div class="s-loader">
-                    <div class="bounce1"></div>
-                    <div class="bounce2"></div>
-                    <div class="bounce3"></div>
-                  </div>
-                </div>
-              </div>
-            </fieldset>
+          
+          <form id="form1" action="/sendmail" method="post">
+            <input name="name" type="text" id="name" placeholder="Your Name..." required/>
+            <input name="email" type="email" id="email" placeholder="Your Email..." required/>
+            <textarea name="message" id="message" cols="45" rows="5" placeholder="Your Message..." required></textarea>
+            <br/>
+            <br/>
+            <center>
+              <div class="g-recaptcha" data-sitekey="6LcQ7S8dAAAAAJMm2qpYGpYpFR_oTQABIGNWXiih" data-theme="light" ></div><br>
+              <input type="submit" name="button" id="button" value="say hello!">
+            </center>
+            <div id="message-warning"></div>
+            <!-- contact-success -->
+            <div id="message-success">
+              <i class="fa fa-check"></i>Your message was sent, thank you!<br />
+            </div>
           </form>
           <!-- Form End -->
 
+          
+
           <!-- contact-warning -->
-          <div id="message-warning"></div>
-          <!-- contact-success -->
-          <div id="message-success">
-            <i class="fa fa-check"></i>Your message was sent, thank you!<br />
-          </div>
+
         </div>
         <!-- /col-twelve -->
       </div>
@@ -1059,9 +1011,9 @@
           <h5>Where to find me</h5>
 
           <p>
-            1600 Amphitheatre Parkway<br />
-            Mountain View, CA<br />
-            94043 US
+            B-22, Aalekh Society<br />
+            Zadeshwar Road, Bharuch<br />
+            392011, Gujarat
           </p>
         </div>
 
@@ -1086,9 +1038,8 @@
           <h5>Call Me At</h5>
 
           <p>
-            Phone: (+63) 555 1212<br />
-            Mobile: (+63) 555 0100<br />
-            Fax: (+63) 555 0101
+            Phone: (+91) 92656 13658<br />
+            
           </p>
         </div>
       </div>
@@ -1104,19 +1055,19 @@
         <div class="col-six tab-full pull-right social">
           <ul class="footer-social">
             <li>
-              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.facebook.com/virag.patel.7982" target="_blank"><i class="fa fa-facebook"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa fa-behance"></i></a>
+              <a href="https://www.linkedin.com/in/viragkumar-patel-3154221a0/" target="_blank"><i class="fa fa-linkedin"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fa fa-slack"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa fa-dribbble"></i></a>
+              <a href="https://github.com/19IT114" target="_blank"><i class="fa fa-github"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.instagram.com/virag_290301/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
             </li>
           </ul>
         </div>
@@ -1126,7 +1077,7 @@
             <span>© Copyright Kards 2016.</span>
             <span
               >Design by
-              <a href="http://www.styleshout.com/">styleshout</a></span
+              <a href="mailto:19it114@charusat.edu.in">Virag Patel</a></span
             >
           </div>
         </div>

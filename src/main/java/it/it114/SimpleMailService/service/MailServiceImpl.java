@@ -21,7 +21,7 @@ public class MailServiceImpl implements MailService {
     public boolean sendMail(String name, String email, String messageFromUser) {
         MimeMessage message = mailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message);
-        String userMessage = "Dear CodersAge, Mr./Ms " + name + " is trying to connect. Following is the message from him/her:  " + messageFromUser;
+        String userMessage = "Dear CodersAge, Mr./Ms " + name + " is trying to connect. Following is the message from him/her:  \n" + messageFromUser;
 
         try {
             helper.setFrom(email, name);
