@@ -28,18 +28,17 @@ public class mailcontroller {
     }
 
 //    @GetMapping("/home")
-//    public void home(@RequestBody Mail mail)
+//    public void home()
 //    {
 //        System.out.println("Sending a mail");
-//
 //        this.mailService.sendMail("Ayush","19it127@charusat.edu.in","Hello, how are you?");
 //        System.out.println("Email sent successfully");
 //    }
     @RequestMapping("/sendmail")
-    public String sendMail( @RequestParam("name") String name, @RequestParam("email") String email, @RequestParam("message") String message,@RequestParam("g-recaptcha-response") String captcha) {
+    public String sendMail(@RequestParam("name") String name, @RequestParam("email") String email, @RequestParam("message") String message,,@RequestParam("g-recaptcha-response") String captcha) {
         if (validator.isValidCaptcha(captcha)) {
             try {
-                mailService.sendMail("name", "email", "message");
+                mailService.sendMail(name,email,message);
             } catch (Exception e) {
                 System.out.println(e);
                 return "Something went wrong!!!";

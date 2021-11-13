@@ -13,6 +13,7 @@ public class CaptchaValidator {
     public boolean isValidCaptcha(String captcha) {
 
         String url= "https://www.google.com/recaptcha/api/siteverify";
+        System.out.println("Captcha Verified Successfully");
         String params="?secret=6LcQ7S8dAAAAAEdm0bOHB9D6955xhdHDw5XcQvL0&response="+captcha;
         String completeUrl=url+params;
         CaptchaResponse resp= restTemplate.postForObject(completeUrl, null, CaptchaResponse.class);
