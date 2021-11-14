@@ -14,7 +14,7 @@ public class CaptchaValidator {
 
         String url= "https://www.google.com/recaptcha/api/siteverify";
         System.out.println("Captcha Verified Successfully");
-        String params="?secret=server_side_secret_key="+captcha;
+        String params="?secret=6LdTNTIdAAAAACTXCeMtG9JH0DJ3xIWDx9uwZcOg="+captcha;
         String completeUrl=url+params;
         CaptchaResponse resp= restTemplate.postForObject(completeUrl, null, CaptchaResponse.class);
         System.out.println(resp.isSuccess());

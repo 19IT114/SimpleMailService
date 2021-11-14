@@ -49,7 +49,7 @@ public class mailcontroller {
             try {
                 mailService.sendMail(name,email,message);
             } catch (Exception e) {
-                System.out.println("Hell");
+                System.out.println(e);
                 return "Something went wrong!!!";
             }
             System.out.println("The message has been sent!!!");
