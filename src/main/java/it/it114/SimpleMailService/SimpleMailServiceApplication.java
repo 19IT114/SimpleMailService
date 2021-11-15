@@ -54,7 +54,7 @@ public class SimpleMailServiceApplication implements CommandLineRunner {
 //		javaMailSender.send(simple);
 //	}
 //
-//	void sendMMEmail() throws MessagingException {
+//	void sendMMEmail() throws MessagingException {  //mail with an attachment for refrence
 //		MimeMessage msg = javaMailSender.createMimeMessage();
 //		MimeMessageHelper helper = new MimeMessageHelper(msg, true);
 //		helper.setTo(new String[]{"19it114@charusat.edu.in","virag290301@gmail.com"});
