@@ -62,7 +62,7 @@ public class mailcontroller {
     @GetMapping(value = "/download")
     public ResponseEntity<Object> downloadFile() throws IOException
     {
-        String filename = "19IT114_Virag_Resume.pdf";
+        String filename = "path_of_your_file_to_be_downloaded";
         File file = new File(filename);
         InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
 
